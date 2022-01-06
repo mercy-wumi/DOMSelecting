@@ -1,0 +1,93 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+#banner {
+    width: 100%;
+}
+img.square {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+#toc {
+    background-color: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    display: table;
+    padding: 1em;
+}
+
+#toc a {
+    text-decoration: none;
+}
+
+.tocnumber {
+    color: black;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #e9e9e9;
+}
+.navbar div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.menu {
+    display: flex;
+    list-style: none;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+}
+#text-logo {
+    padding-left: 0px;
+}
+.navbar a{
+    padding-left: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #e9e9e9;
+}
+.mobileMenu {
+    display: none;
+    border-radius: 0px !important;
+}
+
+
+@media (max-width: 760px) {
+    .mobileMenu {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+}
+@media (min-width: 768px) {
+    img.square {
+        width: 400px; 
+        height: 400px;
+    }
+}
